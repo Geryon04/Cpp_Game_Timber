@@ -1,27 +1,12 @@
 #include <SFML/Graphics.hpp>
-
-namespace sf{
-
-
-int main(){
-    RenderWindow window(VideoMode(200, 200), "SFML works!");
-    CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
-    
-    return 0;
-}
+// Make code easier to type with "using namespace"
+using namespace sf;
+// This is where our game starts from
+int main()
+{
+// Create a video mode object
+VideoMode vm(1920, 1080);
+// Create and open a window for the game
+RenderWindow window(vm, "Timber!!!", Style::Fullscreen);
+return 0;
 }
