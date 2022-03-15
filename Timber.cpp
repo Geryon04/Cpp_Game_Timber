@@ -32,7 +32,20 @@ int main()
     textureTree.loadFromFile("graphics/tree.png");
     Sprite spriteTree;
     spriteTree.setTexture(textureTree);
-    spriteTree.setPosition(810, 0);
+    spriteTree.setPosition(683, 0);
+
+    //Prepare the bee
+    Texture textureBee;
+    textureBee.loadFromFile("graphics/bee.png");
+    Sprite spriteBee;
+    spriteBee.setTexture(textureBee);
+    spriteBee.setPosition(0 , 568);
+
+    //Is the bee currently moving?
+    bool beeActive = false;
+
+    //How fast can the bee fly
+    float beeSpeed = 0.0f;
 
     //Game loop
     while (window.isOpen()){
@@ -63,6 +76,7 @@ int main()
 
       //Draw our game scene here
       window.draw(spriteBackground);
+      window.draw(spriteTree);
 
       // Show everything we just drew
       window.display();
