@@ -39,7 +39,7 @@ int main()
     textureBee.loadFromFile("graphics/bee.png");
     Sprite spriteBee;
     spriteBee.setTexture(textureBee);
-    spriteBee.setPosition(0 , 568);
+    spriteBee.setPosition(0 , 550);
 
     //Is the bee currently moving?
     bool beeActive = false;
