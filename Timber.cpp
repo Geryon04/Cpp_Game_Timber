@@ -7,7 +7,7 @@ using namespace sf;
 int main()
 {
     // Create a video mode object
-    VideoMode vm(1366, 768);
+    VideoMode vm(1200, 700);
 
     // Create and open a window for the game
     RenderWindow window(vm, "Timber!!!", Style::Fullscreen);
@@ -39,7 +39,7 @@ int main()
     textureBee.loadFromFile("graphics/bee.png");
     Sprite spriteBee;
     spriteBee.setTexture(textureBee);
-    spriteBee.setPosition(0 , 550);
+    spriteBee.setPosition(0 , 350);
 
     //Is the bee currently moving?
     bool beeActive = false;
@@ -64,7 +64,7 @@ int main()
     //Position the clouds on the left of the screen at different heights
     spriteCloud1.setPosition(0,0);
     spriteCloud2.setPosition(0, 250);
-    spriteCloud3.setPosition(0, 450);
+    spriteCloud3.setPosition(0, 150);
 
     //Are the clouds currently on screen?
     bool cloud1Active = false;
