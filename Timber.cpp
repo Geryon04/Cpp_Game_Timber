@@ -131,6 +131,20 @@ int main()
 
         }
 
+        //Manage the clouds
+        //Cloud 1
+        if(!cloud1Active){
+            //How fast is the cloud
+            srand((int)time(0) * 10);
+            cloud1Speed = (rand() % 200);
+
+            //How high is the cloud
+            srand((int)time(0) * 10);
+            float height = (rand() % 150);
+            spriteCloud1.setPosition(-200, height);
+            cloud1Active = true;
+        }
+
 
       /*
        **********************************
