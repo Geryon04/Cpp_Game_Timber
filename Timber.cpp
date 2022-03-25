@@ -144,6 +144,16 @@ int main()
             spriteCloud1.setPosition(-200, height);
             cloud1Active = true;
         }
+        else{
+            spriteCloud1.setPosition(spriteCloud1.getPosition().x + (cloud1Speed * dt.asSeconds()), 
+            spriteCloud1.getPosition().y);
+
+            //Has the cloud reached the right hand edge ot the screen?
+            if(spriteCloud1.getPosition().x < 1920){
+                //Set it up ready to be a whole new cloud next frame
+                cloud1Active = false;
+            }
+        }
 
 
       /*
