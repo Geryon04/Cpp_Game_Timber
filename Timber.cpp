@@ -84,6 +84,9 @@ int main()
     //Variables to control time itself
     Clock clock;
 
+    //Track whether the game is running
+    bool paused = true;
+
     //Game loop
     while (window.isOpen()){
         /*
