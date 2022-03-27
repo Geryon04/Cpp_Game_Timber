@@ -67,9 +67,9 @@ int main()
     spriteCloud3.setTexture(textureCloud);
 
     //Position the clouds on the left of the screen at different heights
-    spriteCloud1.setPosition(100,0);
-    spriteCloud2.setPosition(100, 250);
-    spriteCloud3.setPosition(100, 150);
+    spriteCloud1.setPosition(0,0);
+    spriteCloud2.setPosition(0, 250);
+    spriteCloud3.setPosition(0, 150);
 
     //Are the clouds currently on screen?
     bool cloud1Active = false;
