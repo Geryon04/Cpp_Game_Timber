@@ -98,6 +98,11 @@ int main()
            window.close();
        }
 
+       //Start the game
+       if(Keyboard::isKeyPressed(Keyboard::Escape)){
+           paused = false;
+       }
+
        /*
        **********************************
        Update the scene
