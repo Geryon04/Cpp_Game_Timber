@@ -99,7 +99,7 @@ int main()
        }
 
        //Start the game
-       if(Keyboard::isKeyPressed(Keyboard::Escape)){
+       if(Keyboard::isKeyPressed(Keyboard::Enter)){
            paused = false;
        }
 
@@ -108,8 +108,8 @@ int main()
        Update the scene
        **********************************
        */
-
-      // Measure time
+      if(!paused){
+        // Measure time
         Time dt = clock.restart();
         // Setup the bee
         if (!beeActive)
@@ -207,7 +207,7 @@ int main()
                 cloud3Active = false;
             }
         }
-
+      }//End if(!paused)
       /*
        **********************************
        Draw the scene
