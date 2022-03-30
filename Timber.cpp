@@ -112,6 +112,9 @@ int main()
     //Choose a color
     messageText.setFillColor(Color::White);
     scoreText.setFillColor(Color::White);
+
+    //Position the text
+    FloatRect textRect = messageText.getLocalBounds();
     //Game loop
     while (window.isOpen()){
         /*
