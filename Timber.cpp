@@ -115,7 +115,15 @@ int main()
 
     //Position the text
     FloatRect textRect = messageText.getLocalBounds();
-    
+
+    messageText.setOrigin(textRect.left +
+        textRect.width / 2.0f,
+        textRect.top +
+        textRect.height / 2.0f);
+
+    messageText.setPosition(960 / 2.0f, 540 / 2.0f);
+
+    scoreText.setPosition(20, 20);
     //Game loop
     while (window.isOpen()){
         /*
