@@ -115,6 +115,7 @@ int main()
 
     //Position the text
     FloatRect textRect = messageText.getLocalBounds();
+    
     //Game loop
     while (window.isOpen()){
         /*
