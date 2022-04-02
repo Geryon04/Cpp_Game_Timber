@@ -245,6 +245,12 @@ int main()
                 cloud3Active = false;
             }
         }
+
+        //Update the score text
+        std::stringstream ss;
+        ss << "Score = " << score;
+        scoreText.setString(ss.str());
+        
       }//End if(!paused)
       /*
        **********************************
