@@ -1,3 +1,4 @@
+#include <sstream>
 #include <SFML/Graphics.hpp>
 
 // Make code easier to type with "using namespace"
