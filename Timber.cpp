@@ -85,6 +85,18 @@ int main()
     //Variables to control time itself
     Clock clock;
 
+    //Time bar
+    RectangleShape timeBar;
+    float timeBarStartWidth = 400;
+    float timeBarHeight = 80;
+    timeBar.setSize(Vector2f(timeBarStartWidth, timeBarHeight));
+    timeBar.setFillColor(Color::Red);
+    timeBar.setPosition((960 / 2) - timeBarStartWidth / 2, 540);
+
+    Time gameTimeTotal;
+    float timeRemaing = 6.0f;
+    float timeBarWidthPerSecond = timeBarStartWidth / timeRemaing;
+
     //Track whether the game is running
     bool paused = true;
 
