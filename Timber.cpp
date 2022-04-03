@@ -250,7 +250,7 @@ int main()
         std::stringstream ss;
         ss << "Score = " << score;
         scoreText.setString(ss.str());
-        
+
       }//End if(!paused)
       /*
        **********************************
@@ -273,6 +273,14 @@ int main()
 
       //Draw the insect
       window.draw(spriteBee);
+
+      //Draw the score
+      window.draw(scoreText);
+
+      if(paused){
+          //Draw our mesagge
+          window.draw(messageText);
+      }
 
       // Show everything we just drew
       window.display();
