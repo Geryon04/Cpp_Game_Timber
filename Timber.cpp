@@ -168,8 +168,26 @@ int main()
 
         //Subtract from the amount of time remaining
         timeRemaing -= dt.asSeconds();
-        //size up the time bar
+        //Resize up the time bar
         timeBar.setSize(Vector2f(timeBarWidthPerSecond * timeRemaing, timeBarHeight));
+
+        if(timeRemaing <= 0.0f){
+
+            //Pause the game
+            paused = true;
+
+            //Change the message show to the player
+            messageText.setString("Out of time!!");
+
+            //Reposition the text basedon its size
+            FloatRect textRect = messageText.getLocalBounds();
+            messageText.setOrigin(textRect.left +
+                textRect.width / 2.0f,
+                textRect.top +
+                textRect.height / 2.0f);
+
+            messageText.setPosition(960 / 2.0f, 540 / 2.0f);
+        }
 
         // Setup the bee
         if (!beeActive)
