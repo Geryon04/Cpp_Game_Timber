@@ -317,6 +317,9 @@ int main()
       //Draw the score
       window.draw(scoreText);
 
+      //Draw the timebar
+      window.draw(timeBar);
+
       if(paused){
           //Draw our mesagge
           window.draw(messageText);
