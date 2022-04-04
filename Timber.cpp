@@ -4,6 +4,17 @@
 // Make code easier to type with "using namespace"
 using namespace sf;
 
+//Function declaration
+void updateBranches(int seed);
+
+const int NUM_BRANCHES = 6;
+Sprite branches[NUM_BRANCHES];
+
+//Where is the player/branch?
+//Left or Right
+enum class side{ LEFT, RIGHT, NONE };
+side branchPositions[NUM_BRANCHES];
+
 // This is where our game starts from
 int main()
 {
