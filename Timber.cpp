@@ -288,7 +288,8 @@ int main()
             cloud3Active = true;
         }
         else{
-            spriteCloud3.setPosition(spriteCloud3.getPosition().x + (cloud3Speed * dt.asSeconds()), spriteCloud3.getPosition().y);
+            spriteCloud3.setPosition(spriteCloud3.getPosition().x + (cloud3Speed * dt.asSeconds()), 
+            spriteCloud3.getPosition().y);
 
             //Has the cloud reached the right hand edge of the screen?
             if(spriteCloud3.getPosition().x > 1920){
