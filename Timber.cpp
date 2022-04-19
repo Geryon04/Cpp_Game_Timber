@@ -265,7 +265,8 @@ int main()
             cloud2Active = true;
         }
         else{
-            spriteCloud2.setPosition(spriteCloud2.getPosition().x + (cloud2Speed * dt.asSeconds()),
+            spriteCloud2.setPosition(spriteCloud2.getPosition().x +
+             (cloud2Speed * dt.asSeconds()),
             spriteCloud2.getPosition().y);
 
             //Has the cloud reached the right hand edge of the screen?
