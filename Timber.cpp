@@ -1,6 +1,8 @@
 #include <sstream>
 #include <SFML/Graphics.hpp>
 
+//siguente a actualizar
+
 // Make code easier to type with "using namespace"
 using namespace sf;
 
