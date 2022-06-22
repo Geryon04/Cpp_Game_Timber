@@ -1,6 +1,7 @@
 #include <sstream>
 #include <SFML/Graphics.hpp>
 
+//list of feacture
 // Make code easier to type with "using namespace"
 using namespace sf;
 
